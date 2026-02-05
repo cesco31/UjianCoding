@@ -1,0 +1,216 @@
+    body{
+        background-image:url("futuristik.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+    }
+
+    footer[id="about"]{
+        color:white;
+        padding:2px;
+        font-size: 3vw;
+        letter-spacing: 1px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.614),
+        rgba(0, 145, 255, 0.482),rgba(255, 98, 0, 0.63));
+    }
+
+    p[class="about"]{
+        color:white;
+        text-align:justify;
+    }
+
+    footer[id="contact"]{
+        color:white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-image: linear-gradient(rgba(255, 115, 0, 0.63), rgba(255, 0, 217, 0.584));
+    }
+
+    .flash{
+        animation: blink-effect 0.8s linear 3;
+    }
+
+    @keyframes blink-effect{
+        0%{
+            background-color: transparent;
+        }
+        50%{
+            background-color:rgb(143, 64, 64);
+        }
+        100%{
+            background-color: transparent;
+        }
+    }
+
+    a[class="contact"]{  
+        color:white;
+        float:right;
+        text-decoration: none;
+    }
+
+    a[class="about us"]{
+        color:white;
+        float:right;
+        text-decoration: none;
+    }
+
+    h1{
+        letter-spacing: -1px;
+        font-weight: 200;
+        font-style: italic;
+        text-align: center;
+        font-size: 6vw;
+        color:white;
+    }
+
+    h2{
+        letter-spacing: -1px;
+        font-weight: 200;
+        font-style: italic;
+        text-align: justify;
+        margin-left: 4%;
+        margin-right: 6%;
+        font-size: 2vw;
+        color:white;
+    }
+
+    form{
+        font-size: 3vw;
+        text-align: justify;
+        font-family: 'Times New Roman';
+        padding:4vw;
+        border-radius: 3vw;
+        color:white;
+    }
+    
+    input{
+        width:38vw;
+        height:3vw;
+        font-size: 2vw;
+        color:rgb(0, 0, 0);
+        border-radius: 5px;
+        border-color: white;
+    }
+
+    input[type="password"]{
+        font-size: 2vw;
+        color:rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+
+    input:hover{
+        transform:translateY(-3px);
+        animation-duration:3s ;
+    }
+
+    select{
+        font-size: 2vw;
+        color:rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-radius: 3vw;
+        border-color: none;
+    }
+
+    select:hover{
+        transform:translateY(-3px);
+        animation-duration:2s;
+        cursor:pointer;
+    }
+
+    .HTML{
+        float:right;
+        max-width: 50vw;
+        max-height: 20vw;
+        cursor:pointer;
+    }
+    
+    .Python{
+        float:right;
+        max-width: 60vw;
+        max-height: 10vw;
+        cursor:pointer;
+    }
+
+    p[class="email"]{
+        margin-left:8%;
+        margin-top:-6%;
+        color:rgb(255, 255, 255);
+        font-size: 3vw;
+    }
+
+    .telepon{
+        margin-top:-3%;
+    }
+
+    p[class="telepon"]{
+        margin-top:-6%;
+        margin-left:8%;
+        font-size:3vw;
+    }
+
+    .timedoor{
+        margin-top: -3%;
+    }
+
+    p[class="timedoor"]{
+        font-style: italic;
+        margin-top:-6%;
+        margin-left:8%;
+        font-size:3vw;
+    }
+
+    p[class="diri"]{
+        text-align: right;
+        font-size:2vw;
+    }
+
+    .submit-btn{
+        color:rgb(255, 255, 255);
+        background-color: black;
+        font-size: 3vw;
+        cursor: pointer;
+        border-radius: 1vw;
+        border-color: rgb(0, 0, 0);
+    }
+
+    input[type="radio"]{
+        position:absolute;
+        cursor:pointer;
+        left:-18%;
+        margin-top: 3px;
+    }
+
+    .submit-btn:hover{
+        transform:translateY(-4px);
+        animation-duration:5s ;
+    }
+
+    @media (max-width: 800px) {
+        h1{
+            font-size:6vw;
+        }
+        h2{
+            font-size: 4vw;
+        }
+        form{
+            font-size:4vw;
+        }
+        p[class="diri"]{
+            font-size:3vw;
+        }
+        header{
+            font-size:4vw;
+        }
+    } 
+
+    @media (min-width:550px){
+        footer[id="about"]{
+            font-size: 2vw;
+        }
+        header{
+            font-size:3vw;
+        }
+    }
