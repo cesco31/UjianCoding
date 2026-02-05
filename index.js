@@ -306,7 +306,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Kunci Jawaban dan Cek jawaban yang sudah diisi
     window.tampilkanInfo = tampilkanInfo;
-    document.addEventListener("submit", function () {
+    document.addEventListener("submit", function (e) {
+        e.preventDefault();
         const pilihan = document.getElementById("pilihSoal").value;
         const nama = document.getElementById("name").value;
         const email = document.getElementById("email").value;
