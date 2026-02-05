@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html>
-<link rel="icon" type="png" href="VSCODE.png">
-<script src="index.js"></script>
-    <meta charset="UTF-8">
-    <title>Hasil Quiz Para Siswa</title>
-    <style>      
-        h2 { 
-            text-align: center;
-            font-weight: 200; 
-            font-style: italic;
-            font-size: 6vw;
-            letter-spacing: -1px;}
-
-        #hasil{
-            font-size: 3vw; 
-        }
-
-        *{
-            background-image:url("futuristik.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat:no-repeat;
-            background-attachment:fixed;
-            color:aliceblue;
-        }
-
-        .button{
-            font-size: 3vw;
-        }
-    </style>
-<body>
-<h2>Hasil Quiz Para Siswa</h2>
-<div id="hasil">
-</div>
-</body>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="png" href="VSCODE.png">
+    <script src="index.js"></script>
+    <title>Ujian Coding 2026</title> 
+    <header>
+        <a href="#contact" class="contact" onclick="contactfooter()">Contact</a>
+        <a href="#about" class="about us" onclick="contactabout()">About us&nbsp&nbsp</a>
+    </header>
+    <br><br>
+    <body>
+        <h1>Ujian Coding 2026</h1>
+        <br>
+        <h2>Pilihlah tingkat materi sesuai dengan apa yang Anda pelajari lalu kerjakan dengan teliti!</h2>
+        <form id="quizForm">
+            <label for="nama" id="nama">Nama:</label>
+            <br>
+            <input type="text" id="name" name="name" autofocus>
+            <br><br>
+            <img class="HTML" src="HTML,CSS,danJAVASCRIPT.png">
+            <img class="Python" src="Phython.jpg">
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="email" name="email" autofocus placeholder="Misal: cesco@gmail.com">
+            <br><br>
+            <label for="password">Password:</label>  
+            <br>
+            <input type="password" id="password" name="password" autofocus>
+            <br><br>
+            <label for="tingkat" id="tingkat" name="tingkat" >Tingkat:</label>
+            <select id="pilihSoal" onchange="tampilkanInfo()">
+            <option value="-">-</option>
+            <option value="Javascript">Dasar- dasar Javascript</option>
+            <option value="Python">Python</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            </select>
+            <br><br>
+            <div id="keterangan">
+                <p id="teksInfo"></p>
+            </div>        
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </body>
+    <br>
+    <footer id="about">
+        <p class="about">Di website ini, kami percaya bahwa baris kode 
+        bukan sekadar instruksi bagi mesin, melainkan seni pemecahan masalah. Kami hadir untuk menjembatani 
+        kesenjangan antara bakat luar biasa dan peluang kerja yang tepat melalui sistem ujian coding yang adil, mendalam, dan berbasis data.
+        <br><br>
+        Tujuan membuat ujian coding website ini:
+            <ol type="1">
+                <li>Melihat cara berpikir dan efektivitas dalam memecahkan masalah (problem solving).</li>
+                <li>Mengecek dan menilai pemahaman atau kemampuan masing-masing</li>
+                <li>Memberikan standar penilaian yang adil bagi murid-murid yang mengerjakan ujian ini.</li>
+            </ol>
+        </p>
+    </footer>
+    <footer id="contact">
+    <img src="email.png" class="email" width="8%" height="8%">
+    <p class="email">: francesco310707@gmail.com</p>
+    <img src="telepon.png" class="telepon" width="8%" height="8%">
+    <p class="telepon">: 0811-6076-678</p>
+    <img src="Timedoor.png" class="timedoor" width="8%" height="8%">
+    <p class="timedoor">Timedoor Academy Sukomanunggal</p>
+    <p class="diri">Dibuat oleh : Francesco</p>
+    </footer>
 </html>
