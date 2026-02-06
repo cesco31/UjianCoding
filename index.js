@@ -13,7 +13,8 @@ function contactabout(){
 }
 
 //Password
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (e) {
+    e.preventDefault();
     const PASSWORD_SOAL = "ujian2026";
     function tampilkanInfo() {
         const pilihan = document.getElementById("pilihSoal").value;
@@ -514,4 +515,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }));
         }});
+
     })
